@@ -7,7 +7,7 @@ import { bannerData } from "@/lib/data";
 
 export function HomePageCarousel() {
     return (
-        <Carousel autoPlay interval={3000} infiniteLoop showStatus={false} showIndicators={false}>
+        <Carousel autoPlay interval={3000} infiniteLoop showStatus={false} showIndicators={false} showThumbs={false}>
             {bannerData.map((x, i) => (
                 <div key={`banner-${x.url}`} className="overflow-hidden rounded-md">
                     <Image src={x.image} alt={`banner-${i}`} />
