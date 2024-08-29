@@ -32,12 +32,12 @@ export default function RootLayout({
 
     const Desktop = () => (
         <div className="w-full h-full items-center flex">
-            <div className="m-4 flex-1">
+            <div className="p-4 flex-1">
                 <Link href="/" className="flex w-52">
                     <Image src={Logo} alt="logo.png" className="object-contain" />
                 </Link>
             </div>
-            <div className="w-full h-full justify-start self-start grid-flow-col auto-cols-auto gap-2 items-center hidden md:grid ">
+            <div className="w-full h-full justify-start self-start grid-flow-col gap-2 items-center hidden md:grid ">
                 {data.map((x, i) => {
                     return (
                         <div className="dropdown dropdown-hover" key={x.mn_title}>
@@ -70,7 +70,7 @@ export default function RootLayout({
                                 <Desktop />
                             </div>
                         </nav>
-                        <main className="flex min-h-screen pt-10 gap-4 flex-col items-center px-8 md:px-16">{children}</main>
+                        <main className="flex min-h-screen pt-10 gap-4 flex-col items-center px-8 md:px-16 overflow-hidden">{children}</main>
                     </div>
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
