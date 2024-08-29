@@ -1,6 +1,5 @@
 import { H1, P } from "@/components/ui/text";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Page() {
     return (
@@ -14,9 +13,9 @@ export default function Page() {
                     {Array(8)
                         .fill(8)
                         .map((_, idx) => (
-                            <Link className="shadow-md" key={`i-${idx}`} href={`/c${idx + 1}.jpg`}>
+                            <a className="shadow-md" key={`i-${idx}`} href={`/c${idx + 1}.jpg`}>
                                 <Image src={`/c${idx + 1}.jpg`} alt="Not found!" height={256} width={256} />
-                            </Link>
+                            </a>
                         ))}
                 </div>
             </section>
