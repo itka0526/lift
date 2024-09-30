@@ -4,6 +4,7 @@ import { H1, P, Section } from "@/components/ui/text";
 import { data } from "@/lib/data";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import React from "react";
 
 export default function Page() {
     const products = data.find((x) => x.title === "Products") as

@@ -1,3 +1,5 @@
+import React from "react";
+
 import Image from "next/image";
 import StarLinkImage from "@/public/starlink.gif";
 import StarLinkImage2 from "@/public/starlink-img02.jpg";

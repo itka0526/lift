@@ -290,6 +290,12 @@ export const data = [
         ],
         url: "/download",
     },
+    {
+        title: "Contact Us",
+        mn_title: "Холбогдох",
+        items: [],
+        url: "/contact_us",
+    },
 ];
 
 export const bannerData = [

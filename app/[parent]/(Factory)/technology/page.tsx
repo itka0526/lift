@@ -5,7 +5,7 @@ export default function Page() {
     const CustomSection = ({ title, paragraph, src }: { title: string; src: string; paragraph: string }) => (
         <section className=" bg-slate-100 my-4 rounded-md">
             <div className="grid grid-cols-5 w-full h-full">
-                <div className="col-span-1 flex w-full h-full bg-slate-200 p-2">
+                <div className="col-span-1 flex w-full h-full bg-slate-100 p-2">
                     <div className="h-full w-full">
                         <Image height={128} width={256} alt="Not found!" src={src} />
                     </div>

@@ -8,6 +8,6 @@ export default function Page({ params: { parent } }: Props) {
     if (!res) {
         return notFound();
     } else {
-        return redirect(res.items.length > 0 ? res.items[0].url : "/");
+        return redirect(res.items.length > 0 ? res.items[0].url : res.url);
     }
 }
