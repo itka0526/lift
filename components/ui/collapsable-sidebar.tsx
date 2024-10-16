@@ -7,9 +7,9 @@ export function CollapsibleSidebar() {
     const inputRef = useRef<HTMLInputElement>(null);
     const pathname = usePathname();
     useEffect(() => {
-        if (inputRef.current) {
+        if (inputRef && inputRef.current) {
             inputRef.current.checked = false;
         }
     }, [pathname]);
-    return <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={inputRef} />;
+    return <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={inputRef}></input>;
 }

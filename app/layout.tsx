@@ -67,7 +67,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body id="body" className={inter.className}>
-                <div className={`drawer`}>
+                <div className="drawer">
                     <CollapsibleSidebar />
                     <div className="drawer-content flex flex-col">
                         <nav className="navbar bg-base-100 w-full shadow-md">
@@ -80,7 +80,6 @@ export default function RootLayout({
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu bg-base-200 min-h-full w-80 p-4">
-                            {/* Sidebar content here */}
                             <div className="flex flex-col h-full bg-background rounded-md">
                                 <div className="flex-1 overflow-auto ">
                                     <Accordion type="single" collapsible={true} defaultValue={""}>
