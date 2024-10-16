@@ -9,6 +9,7 @@ import HE1 from "@/public/he1.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import ShaftColor from "@/public/sc1.jpg";
+import { MoreDecorations } from "@/components/ui/more-decorations";
 
 export default function Page() {
     return (
@@ -47,11 +48,7 @@ export default function Page() {
                     })}
                 </div>
             </section>
-            <section className="grid items-center pb-8 pt-4">
-                <Link className="px-8 py-4 rounded-md bg-main_blue text-white" href={"/beautiful_elevators"}>
-                    Илүү их тоноглол
-                </Link>
-            </section>
+            <MoreDecorations />
             <COP_LOP_LANDING_DOOR_CEILING />
             <section className="flex flex-col gap-6">
                 <div className="my-8">
