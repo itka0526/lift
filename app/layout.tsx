@@ -75,7 +75,7 @@ export default function RootLayout({
                                 <Desktop />
                             </div>
                         </nav>
-                        <main className="flex min-h-screen pt-10 gap-4 flex-col items-center px-8 md:px-16 overflow-hidden">{children}</main>
+                        <main className="flex min-h-screen pt-10 gap-4 flex-col items-center px-4 md:px-16 overflow-hidden">{children}</main>
                     </div>
                     <div className="drawer-side">
                         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>

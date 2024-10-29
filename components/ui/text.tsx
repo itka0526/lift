@@ -12,7 +12,7 @@ export const P = ({ children, className, ...rest }: PropsWithChildren & HTMLAttr
 );
 export const Section = ({ children, className, ...rest }: PropsWithChildren & HTMLAttributes<HTMLElement>) => (
     <section
-        className={`w-full bg-slate-100 rounded-md flex flex-col gap-8 md:gap-12 justify-center items-center px-8 py-4 md:px-32 md:py-16 ${
+        className={`w-full bg-slate-100 rounded-md flex flex-col gap-8 md:gap-12 justify-center items-center px-4 py-4 md:px-32 md:py-16 ${
             className ?? ""
         }`}
         {...rest}
