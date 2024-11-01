@@ -7,7 +7,6 @@ import { RIGHT_IMG_LEFT_TXT } from "@/components/ui/RIGHT_IMG_LEFT_TXT";
 import { H1 } from "@/components/ui/text";
 import HE1 from "@/public/he1.jpg";
 import Image from "next/image";
-import Link from "next/link";
 import ShaftColor from "@/public/sc1.jpg";
 import { MoreDecorations } from "@/components/ui/more-decorations";
 
