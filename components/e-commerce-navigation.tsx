@@ -2,44 +2,8 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { ChevronDown, Menu } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-    Sidebar,
-    SidebarContent,
-    SidebarHeader,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
-    SidebarProvider,
-    SidebarTrigger,
-} from "@/components/ui/sidebar";
 import CategoryNav from "./left-navbar";
-
-const categories = [
-    {
-        name: "Category 1",
-        items: ["Subcategory 1", "Subcategory 2", "Subcategory 3", "Subcategory 4", "Subcategory 5"],
-    },
-    {
-        name: "Category 2",
-        items: ["Subcategory 1", "Subcategory 2", "Subcategory 3"],
-    },
-    {
-        name: "Category 3",
-        items: ["Subcategory 1", "Subcategory 2", "Subcategory 3", "Subcategory 4"],
-    },
-    {
-        name: "Category 4",
-        items: ["Subcategory 1", "Subcategory 2"],
-    },
-    {
-        name: "Category 5",
-        items: ["Subcategory 1", "Subcategory 2", "Subcategory 3", "Subcategory 4", "Subcategory 5"],
-    },
-];
 
 const products = Array.from({ length: 192 }, (_, i) => ({
     id: i + 1,
@@ -70,12 +34,7 @@ export function ECommerceNavigation() {
                     <ul className="flex flex-nowrap gap-4 w-full">
                         {Array.from({ length: totalPages }, (_, i) => (
                             <li key={i}>
-                                <Button
-                                    variant={activePage === i + 1 ? "default" : "outline"}
-                                    size="icon"
-                                    // className="min-w-[40px] h-10 px-2 py-1 text-sm sm:min-w-[48px] sm:h-12 sm:px-3 sm:py-2 sm:text-base"
-                                    onClick={() => setActivePage(i + 1)}
-                                >
+                                <Button variant={activePage === i + 1 ? "default" : "outline"} size="icon" onClick={() => setActivePage(i + 1)}>
                                     {i + 1}
                                 </Button>
                             </li>
