@@ -67,13 +67,13 @@ export function ECommerceNavigation() {
                     ))}
                 </div>
                 <nav className="mt-8 flex justify-center w-full overflow-x-auto">
-                    <ul className="flex flex-nowrap space-x-2 w-max">
+                    <ul className="flex flex-nowrap gap-4 w-full">
                         {Array.from({ length: totalPages }, (_, i) => (
                             <li key={i}>
                                 <Button
                                     variant={activePage === i + 1 ? "default" : "outline"}
                                     size="icon"
-                                    className="min-w-[40px] h-10 px-2 py-1 text-sm sm:min-w-[48px] sm:h-12 sm:px-3 sm:py-2 sm:text-base"
+                                    // className="min-w-[40px] h-10 px-2 py-1 text-sm sm:min-w-[48px] sm:h-12 sm:px-3 sm:py-2 sm:text-base"
                                     onClick={() => setActivePage(i + 1)}
                                 >
                                     {i + 1}
